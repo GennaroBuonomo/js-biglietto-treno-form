@@ -1,6 +1,6 @@
 // Pulsante dom
 const calculate = document.getElementById('calculate')
-
+const results = document.getElementById('results')
 // creo il click
 calculate.addEventListener('click', (e) => {
   e.preventDefault();
@@ -25,7 +25,7 @@ calculate.addEventListener('click', (e) => {
 
  }
 
-  results.innerText = `Km percorsi: ${km}, età del passeggero: ${age}, prezzo finale: ${finalprice}`
+  results.innerText = `Km percorsi: ${km}, età del passeggero: ${age}, prezzo finale: ${finalprice.toFixed(2)}`
 })
 
 
