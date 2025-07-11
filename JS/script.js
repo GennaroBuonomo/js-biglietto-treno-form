@@ -7,6 +7,7 @@ calculate.addEventListener('click', (e) => {
 
   const km = document.getElementById('km').value
   const age = document.getElementById('age').value
+  const nominativo = document.getElementById('nominativo').value
 
   // calcolo prezzo base
  const baseprice = 0.21 * km;
@@ -25,7 +26,7 @@ calculate.addEventListener('click', (e) => {
 
  }
 
-  results.innerText = `Km percorsi: ${km}, età del passeggero: ${age}, prezzo finale: ${finalprice.toFixed(2)}`
+  results.innerText = `nominativo: ${nominativo}, Km percorsi: ${km}, età del passeggero: ${age}, prezzo finale: ${finalprice.toFixed(2)}`
 })
 
 
