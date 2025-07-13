@@ -1,6 +1,7 @@
 // Pulsante dom
 const calculate = document.getElementById('calculate')
 const results = document.getElementById('results')
+const annulla = document.getElementById('annulla')
 // creo il click
 calculate.addEventListener('click', (e) => {
   e.preventDefault();
@@ -27,6 +28,13 @@ calculate.addEventListener('click', (e) => {
  }
 
   results.innerText = `nominativo: ${nominativo}, Km percorsi: ${km}, età del passeggero: ${age}, prezzo finale: ${finalprice.toFixed(2)}`
+})
+
+annulla.addEventListener('click', (e) => {
+  e.preventDefault();
+  results.innerText = '';
+  document.getElementById('km').value = ''; 
+  document.getElementById('age').value = ''; 
 })
 
 
